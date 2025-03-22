@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ValeSmart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        
+        <div class="logo">
+            <img src="logo.png" alt="ValeSmart Logo">
+        </div>
+        
+    </header>
+
+    <main>
+        <section>
+            <h2>Bem-vindo(a) à ValeSmart!</h2>
+        </section>
+    
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+    
+            
+            .row {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+            }
+    
+            .column {
+                padding: 20px;
+                max-width: 300px;
+                text-align: center;
+            }
+    
+            .column img {
+                width: 100%;
+                height: auto;
+                cursor: pointer;
+                transition: transform 0.5s ease, box-shadow 0.5s ease;
+            }
+
+            .column img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 30px rgba(255, 0, 0, 5);
+            
+            }
+
+            footer {
+            text-align: center;
+            padding: 10px;
+            background: #030c27;
+            color: white;
+            position: fixed;
+            bottom: 0;  /* Coloca o rodapé na parte inferior */
+            left: 0;    /* Alinha o rodapé com a borda esquerda */
+            width: 100%; /* Faz com que o rodapé ocupe toda a largura da tela */
+            }
+
+        </style>
+    
+        <div class="row">
+            <div class="column">
+                <img src="loginservidor2.png" alt="Servidor" onclick="location.href='login_admin.php'">
+            </div>
+            <div class="column">
+                <img src="loginaluno2.png" alt="Aluno" onclick="location.href='login_aluno.php'">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ValeSmart. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
